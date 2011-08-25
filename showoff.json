@@ -1,0 +1,9 @@
+{
+  "name": "Happy Programming",
+  "sections": [
+    {"section":"1_before_talk"},
+    {"section":"2_todo_list"},
+    {"section":"3_resources"},
+    {"section":"4_conclusion_and_qa"}
+  ]
+}
