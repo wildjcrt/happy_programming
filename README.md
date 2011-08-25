@@ -1,5 +1,7 @@
 # Happy Programming Slide
-I use a Ruby app called showoff to generate and serve the workshop slides.
+This is my presentation in [RubyConf Taiwan 2011](http://rubyconf.tw/2011/).
+
+I use a Ruby app called showoff to generate and serve the workshop slides. Thanks schacon!
 
 [https://github.com/schacon/showoff](https://github.com/schacon/showoff)
 
