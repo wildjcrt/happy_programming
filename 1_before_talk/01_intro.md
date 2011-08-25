@@ -29,6 +29,7 @@
 * 安裝 Rails 環境
 * Rails CRUD
 * Rails RESTful
+* 裝機實務
 * =============> [Rails 101](http://rails-101.logdown.com/) from xdite
 
 <!SLIDE center bullets incremental>

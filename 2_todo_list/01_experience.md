@@ -32,7 +32,7 @@
 
 ![桌上遊戲](Board-Games.jpg)
 ###遊戲太多，自己寫一個網站來整理遊戲
-這些真的不是我的遊戲
+我發誓這些真的不是我的遊戲
 
 <!SLIDE bullets incremental>
 # 常常忘記的事情 #

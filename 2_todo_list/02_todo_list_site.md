@@ -37,5 +37,5 @@
 * 待辦事項快到期時寄信， Rails ActionMailer
 * 調整外觀，rails_admin gem, css3buttons_rails_helpers gem
 * 自動化排程， whenever gem
-* 把網站丟上 heroku/aws
+* 把網站發佈到 heroku/aws
 * 把網站給朋友試用，並接收意見去調整網站功能
