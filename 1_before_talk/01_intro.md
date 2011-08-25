@@ -4,7 +4,6 @@
 
 ### Next step after learning Rails CRUD
 ### 小蟹 @ RubyConf
-* *http://wildjcrt.github.com/happy_programming/*
 
 <!SLIDE bullets incremental>
 # Who am I #

@@ -11,6 +11,8 @@
 <!SLIDE center>
 # Q & A
 
+* *http://wildjcrt.github.com/happy_programming/*
+
 <!SLIDE center>
 # 投影片技術 #
 
