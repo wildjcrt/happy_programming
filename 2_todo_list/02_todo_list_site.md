@@ -31,6 +31,13 @@
 * Draggle+Sortable、Autocomplete、Datepicker
 
 <!SLIDE bullets incremental>
+# CRUD 和 RESTful 就是蹲馬步 #
+
+* 蹲馬步很無聊
+* 幾乎任何功能都是從 CRUD 和 RESTful 開始
+* 網站很醜沒關係，先求會動再求好看
+
+<!SLIDE bullets incremental>
 # 網站功能 #
 
 * 搜尋待辦事項， meta_search gem
