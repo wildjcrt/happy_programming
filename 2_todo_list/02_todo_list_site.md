@@ -23,15 +23,17 @@
 <!SLIDE bullets incremental>
 # 網站功能 #
 
-* 簡單的 Todo list
+* 簡單的 Todo list， simple_form gem
 * 加上使用者註冊、登入驗證， devise gem => 14:30 善用 Devise 建置會員系統
 * 可以上傳檔案， paperclip gem
+* 加入分頁， kaminari gem
 * 加入 [jQuery UI](http://jqueryui.com/demos/) 特效：
 * Draggle+Sortable、Autocomplete、Datepicker
 
 <!SLIDE bullets incremental>
 # 網站功能 #
 
+* 搜尋待辦事項， meta_search gem
 * 待辦事項快到期時寄信， Rails ActionMailer
 * 調整外觀，rails_admin gem, css3buttons_rails_helpers gem
 * 自動化排程， whenever gem

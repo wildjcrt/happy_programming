@@ -58,6 +58,7 @@
 <!SLIDE bullets incremental>
 # 繼續深入的 Ruby 資源 #
 
+* http://ruby-toolbox.com/
 * http://rubyquicktips.com/
 * http://sdruby.org/podcast
 * http://rubyrogues.com/
