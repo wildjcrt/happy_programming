@@ -9,11 +9,11 @@
 # Who am I #
 
 * 小蟹 (a.k.a Jerry Lee)
-* Rails Tuesday 協辦人
-* Email: wildjcrt@gmail.com
-* Blog: http://wildjcrt.pixnet.net/
-* Twitter: @wildjcrt
-* http://channel.pixnet.net/lovely @ PIXNET
+* [Rails Tuesday](http://twitter.com/railstuesday) 協辦人
+* Email: [wildjcrt@gmail.com](wildjcrt@gmail.com)
+* Blog: [http://wildjcrt.pixnet.net/blog](http://wildjcrt.pixnet.net/blog)
+* Twitter: @[wildjcrt](http://twitter.com/wildjcrt)
+* [http://channel.pixnet.net/lovely](http://channel.pixnet.net/lovely) @ [PIXNET](http://www.pixnet.net)
 
 <!SLIDE bullets incremental transition=fade>
 # Agenda #
@@ -29,7 +29,7 @@
 * 安裝 Rails 環境
 * Rails CRUD
 * Rails RESTful
-* =============> Rails 101 from xdite
+* =============> [Rails 101](http://rails-101.logdown.com/) from xdite
 
 <!SLIDE center bullets incremental>
 # Rails Tuesday #
@@ -43,4 +43,4 @@ xdite, 小蟹, Vicent, 澤清…等
 * 聊天得到的體驗有
 * 寫程式要快樂、開心、熱情
 * 要學 git
-* Twitter: @RailsTuesday
+* Twitter: @[RailsTuesday](http://twitter.com/railstuesday)
