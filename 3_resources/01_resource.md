@@ -67,5 +67,5 @@
 <!SLIDE bullets incremental>
 # 推薦去挑戰的遊戲 #
 
-* ###https://github.com/ryanb/ruby-warrior
+* https://github.com/ryanb/ruby-warrior
 * http://railsforzombies.org/

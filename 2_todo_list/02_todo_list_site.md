@@ -13,7 +13,7 @@
 * [http://excid3.com/blog/10-ideas-for-beginner-web-developers/](http://excid3.com/blog/10-ideas-for-beginner-web-developers/)
 
 <!SLIDE center>
-# 待辦事項清單 Todo list #
+# 待辦事項清單 Todo List #
 
 * 功能實用，簡易版 redmine
 * 記錄瑣事
