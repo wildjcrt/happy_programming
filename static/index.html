@@ -1,0 +1,531 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Happy Programming</title>
+
+  <link rel="stylesheet" href="./css/reset.css" type="text/css"/>
+  <link rel="stylesheet" href="./css/showoff.css" type="text/css"/>
+
+  <script type="text/javascript" src="./js/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.cycle.all.js"></script>
+	<script type="text/javascript" src="./js/jquery-print.js"></script>
+  <script type="text/javascript" src="./js/jquery.batchImageLoad.js"></script>
+
+  <script type="text/javascript" src="./js/jquery.doubletap-0.1.js"></script>
+
+  <script type="text/javascript" src="./js/fg.menu.js"></script>
+  <script type="text/javascript" src="./js/showoff.js"></script>
+  <script type="text/javascript" src="./js/jTypeWriter.js"> </script>
+  <script type="text/javascript" src="./js/sh_main.min.js"></script>
+  <script type="text/javascript" src="./js/core.js"></script>
+  <script type="text/javascript" src="./js/showoffcore.js"></script>
+
+  <link type="text/css" href="./css/fg.menu.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/theme/ui.all.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/sh_style.css" rel="stylesheet" >
+
+  
+    <link rel="stylesheet" href="file/slide.css" type="text/css"/>
+  
+
+  
+
+  <script type="text/javascript">
+  $(function(){
+    setupPreso(false, './');
+  });
+  </script>
+</head>
+
+<body>
+
+
+<a tabindex="0" href="#search-engines" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="navmenu"><span class="ui-icon ui-icon-triangle-1-s"></span>slides</a>
+<div id="navigation" class="hidden"></div>
+
+<div id="help">
+  <table>
+    <tr><td class="key">space, &rarr;</td><td>next slide</td></tr>
+    <tr><td class="key">&larr;</td><td>previous slide</td></tr>
+    <tr><td class="key">d</td><td>debug mode</td></tr>
+    <tr><td class="key">## &lt;ret&gt;</td><td>go to slide #</td></tr>
+    <tr><td class="key">c</td><td>table of contents (vi)</td></tr>
+    <tr><td class="key">f</td><td>toggle footer</td></tr>
+    <tr><td class="key">r</td><td>reload slides</td></tr>
+    <tr><td class="key">z</td><td>toggle help (this)</td></tr>
+  </table>
+</div>
+
+<div class="buttonNav">
+  <input type="submit" onClick="prevStep();" value="prev"/>
+  <input type="submit" onClick="nextStep();" value="next"/>
+</div>
+
+<div id="preso">loading presentation...</div>
+<div id="footer">
+  <span id="slideInfo"></span>
+  <span id="debugInfo"></span>
+  <span id="notesInfo"></span>
+</div>
+
+<div id="slides" class="offscreen" style="display:none;">
+<div class="slide" data-transition="none"><div class="content center" ref="1_before_talk/01_intro/1">
+<h1>Happy Programming</h1>
+
+<h1>&#x5FEB;&#x6A02;&#x5BEB;&#x7A0B;&#x5F0F;</h1>
+
+<h3>Next step after learning Rails CRUD</h3>
+
+<h3>&#x5C0F;&#x87F9; @ RubyConf</h3>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="1_before_talk/01_intro/2">
+<h1>Who am I</h1>
+
+<ul>
+<li>&#x5C0F;&#x87F9; (a.k.a Jerry Lee)</li>
+<li><a href="http://twitter.com/railstuesday">Rails Tuesday</a> &#x5354;&#x8FA6;&#x4EBA;</li>
+<li>Email: <a href="wildjcrt@gmail.com">wildjcrt@gmail.com</a></li>
+<li>Blog: <a href="http://wildjcrt.pixnet.net/blog">http://wildjcrt.pixnet.net/blog</a></li>
+<li>Twitter: @<a href="http://twitter.com/wildjcrt">wildjcrt</a></li>
+<li><a href="http://channel.pixnet.net/lovely">http://channel.pixnet.net/lovely</a> @ <a href="http://www.pixnet.net">PIXNET</a></li>
+</ul>
+
+</div>
+</div><div class="slide" data-transition="fade"><div class="content bullets incremental" ref="1_before_talk/01_intro/3">
+<h1>Agenda</h1>
+
+<ul>
+<li>&#x958B;&#x59CB;&#x4E4B;&#x524D;&#x7684;&#x5206;&#x4EAB;&#x8207;&#x5EFA;&#x8B70;</li>
+<li>&#x5F85;&#x8FA6;&#x4E8B;&#x9805;&#x7DF4;&#x7FD2;</li>
+<li>&#x9032;&#x968E;&#x8CC7;&#x6E90;</li>
+<li>&#x7D50;&#x8AD6;</li>
+</ul>
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="1_before_talk/01_intro/4">
+<h1>&#x4E0D;&#x6703;&#x8B1B;&#x7684;&#x80CC;&#x666F;&#x77E5;&#x8B58;</h1>
+
+<ul>
+<li>&#x5B89;&#x88DD; Rails &#x74B0;&#x5883;</li>
+<li>Rails CRUD</li>
+<li>Rails RESTful</li>
+<li>&#x88DD;&#x6A5F;&#x5BE6;&#x52D9;</li>
+<li>=============&gt; <a href="http://rails-101.logdown.com/">Rails 101</a> from xdite</li>
+</ul>
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content center bullets incremental" ref="1_before_talk/01_intro/5">
+<h1>Rails Tuesday</h1>
+
+<p>&#x6BCF;&#x9031;&#x4E8C;&#x665A;&#x4E0A; 19:30 ~ 22:00</p>
+
+<p>xdite, &#x5C0F;&#x87F9;, Vicent, &#x6FA4;&#x6E05;&#x2026;&#x7B49;</p>
+
+<p>&#x884C;&#x5929;&#x5BAE;&#x6377;&#x904B;&#x7AD9; 3 &#x865F;&#x51FA;&#x53E3;&#x7684; Facilmente &#x6CD5;&#x5176;&#x66FC;&#x7B2C;&#x5496;&#x5561; 2 &#x6A13;</p>
+
+<ul>
+<li>&#x804A;&#x5929;&#x5F97;&#x5230;&#x7684;&#x9AD4;&#x9A57;&#x6709;</li>
+<li>&#x5BEB;&#x7A0B;&#x5F0F;&#x8981;&#x5FEB;&#x6A02;&#x3001;&#x958B;&#x5FC3;&#x3001;&#x71B1;&#x60C5;</li>
+<li>&#x8981;&#x5B78; git</li>
+<li>Twitter: @<a href="http://twitter.com/railstuesday">RailsTuesday</a></li>
+</ul>
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="1_before_talk/02.passion_and_git/1">
+<h1>Happy Programming</h1>
+
+<ul>
+<li>The most important advise!</li>
+<li>&#x592A;&#x56B4;&#x8085;&#xFF1F; &#x90A3;&#x6211;&#x5011;&#x63DB;&#x53E5;&#x8A71;&#x8AAA;&#x2026;</li>
+</ul>
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="1_before_talk/02.passion_and_git/2">
+<h1>&#x5E79;&#x58DE;&#x4E8B;&#x662F;&#x9032;&#x6B65;&#x6700;&#x5927;&#x7684;&#x539F;&#x52D5;&#x529B;</h1>
+
+<h3><em>~ gslin</em></h3>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="1_before_talk/02.passion_and_git/3">
+<h1>Happy Programming</h1>
+
+<p><img src="file:///Users/jcrt/learning/happy_programming/1_before_talk/matz.png" alt="&#x5FEB;&#x6A02;&#x5B78;Ruby"/></p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="1_before_talk/02.passion_and_git/4">
+<h1>&#x71B1;&#x611B;&#x5BEB;&#x7A0B;&#x5F0F;&#xFF0C;&#x4E0D;&#x7136;&#x5C31;&#x96E2;&#x958B;&#x5B83;&#x3002;</h1>
+
+<h3><em>~Chad Fowler, Passionate Programmer</em></h3>
+</div>
+</div><div class="slide" data-transition="none"><div class="content canter bullets incremental" ref="1_before_talk/02.passion_and_git/5">
+<ul>
+<li>&#x81EA;&#x7136;&#x5730;&#x6301;&#x7E8C;&#x9032;&#x6B65;</li>
+<li>&#x5B78;&#x7FD2; CRUD, RESTful</li>
+<li>&#x6709;&#x6FC0;&#x60C5;&#x3001;&#x6709;&#x71B1;&#x60C5;&#xFF0C;&#x6703;&#x8B93;&#x4F60;&#x81EA;&#x52D5;&#x81EA;&#x767C;&#x7684; coding &#xFF0C;&#x9032;&#x800C;&#x5FEB;&#x901F;&#x6210;&#x9577;</li>
+<li>&#x627E;&#x81EA;&#x5DF1;&#x6709;&#x8208;&#x8DA3;&#x7684; idea &#x53BB;&#x5BE6;&#x4F5C;&#x6216;&#x662F;&#x91CD;&#x523B;</li>
+</ul>
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="1_before_talk/02.passion_and_git/6">
+<h1>&#x8981;&#x5B78; Git</h1>
+
+<ul>
+<li>&#x5F88;&#x591A;&#x4EBA;&#x8DF3;&#x904E; git &#x5B78;&#x7FD2; Rails</li>
+<li><h2>&#x5343;&#x842C;&#x4E0D;&#x8981;</h2></li>
+<li>&#x597D;&#x8655;1&#x3001;&#x7248;&#x672C;&#x7BA1;&#x7406;</li>
+<li>2&#x3001;Rails &#x5C08;&#x6848;&#x653E;&#x5728; Github &#x4E0A;</li>
+<li>3&#x3001;&#x5927;&#x90E8;&#x5206;&#x7684; Ruby gems &#x90FD;&#x653E;&#x5728; Github &#x4E0A;</li>
+</ul>
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="1_before_talk/02.passion_and_git/7">
+<h1>Github</h1>
+
+<ul>
+<li>&#x7528; github &#x7DB2;&#x7AD9;&#x7DF4;&#x7FD2; git</li>
+<li><h3>Github &#x958B;&#x5C08;&#x6848;&#x4E0D;&#x7528;&#x9322;</h3></li>
+<li>1&#x3001;&#x719F;&#x6089;&#x5E38;&#x7528;&#x4E03;&#x500B;&#x6307;&#x4EE4;</li>
+<li>2&#x3001;fork &#x5C08;&#x6848;&#x56DE;&#x4F86;&#x7814;&#x7A76;</li>
+</ul>
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="1_before_talk/02.passion_and_git/8">
+<h1>Git &#x5E38;&#x7528;&#x4E03;&#x500B;&#x6307;&#x4EE4;</h1>
+
+<ul>
+<li>git commit</li>
+<li>git push</li>
+<li>git pull</li>
+<li>git branch</li>
+<li>git checkout</li>
+<li>git merge</li>
+<li>&#x53C3;&#x8003;&#x7DB2;&#x7AD9;&#xFF1A;<a href="http://www.ndpsoftware.com/git-cheatsheet.html">git-cheatsheet</a></li>
+</ul>
+
+</div>
+</div><div class="slide" data-transition="fade"><div class="content center" ref="2_todo_list/01_experience/1">
+<h1>&#x5F85;&#x8FA6;&#x4E8B;&#x9805;&#x7DF4;&#x7FD2;</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="2_todo_list/01_experience/2">
+<h1>&#x6301;&#x7E8C;&#x5BEB;&#x7A0B;&#x5F0F;&#x624D;&#x6703;&#x9032;&#x6B65;</h1>
+
+<ul>
+<li>&#x6211;&#x5B78;&#x4E86; CRUD &#xFF0C;&#x7136;&#x5F8C;&#x53EF;&#x4EE5;&#x5E79;&#x9EBC;&#x2026;</li>
+<li>&#x5EFA;&#x8B70;&#x627E;&#x4E00;&#x500B;&#x529F;&#x80FD;&#x5BEB;&#x6210;&#x7DB2;&#x7AD9;</li>
+<li>&#x6162;&#x6162;&#x52A0;&#x5165;&#x65B0;&#x529F;&#x80FD;</li>
+<li>&#x8A66;&#x8457;&#x627E;&#x5230; gems &#x5E6B;&#x52A9;&#x4F60;&#x958B;&#x767C;&#x65B0;&#x529F;&#x80FD;</li>
+</ul>
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="2_todo_list/01_experience/3">
+<h1>&#x6211;&#x5728;&#x96FB;&#x8166;&#x524D;&#x6E96;&#x5099;&#x597D;&#x4E86;&#xFF01;</h1>
+
+<ul>
+<li>&#x25CF;</li>
+<li>&#x25CF;</li>
+<li>&#x25CF;</li>
+</ul>
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="2_todo_list/01_experience/4">
+<p><img src="file:///Users/jcrt/learning/happy_programming/2_todo_list/doh.jpg" alt="doh"/></p>
+
+<h2>&#x8166;&#x888B;&#x4E00;&#x7247;&#x7A7A;&#x767D;&#xFF0C;&#x6C92;&#x6709; idea &#x600E;&#x9EBC;&#x8FA6;&#x2026;</h2>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="2_todo_list/01_experience/5">
+<h1>&#x5EFA;&#x8B70;&#x4E0B;&#x624B;&#x65B9;&#x5411;</h1>
+
+<ul>
+<li>&#x81EA;&#x5DF1;&#x7684;&#x8208;&#x8DA3;</li>
+<li>&#x89BA;&#x5F97;&#x5F88;&#x9EBB;&#x7169;&#x7684;&#x4E8B;&#x60C5;</li>
+<li>&#x5E38;&#x7528;&#x7684;&#x7DB2;&#x7AD9;</li>
+</ul>
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="2_todo_list/01_experience/6">
+<h1>&#x8208;&#x8DA3;</h1>
+
+<p><img src="file:///Users/jcrt/learning/happy_programming/2_todo_list/Board-Games.jpg" alt="&#x684C;&#x4E0A;&#x904A;&#x6232;"/></p>
+
+<h3>&#x904A;&#x6232;&#x592A;&#x591A;&#xFF0C;&#x81EA;&#x5DF1;&#x5BEB;&#x4E00;&#x500B;&#x7DB2;&#x7AD9;&#x4F86;&#x6574;&#x7406;&#x904A;&#x6232;</h3>
+
+<p>&#x6211;&#x767C;&#x8A93;&#x9019;&#x4E9B;&#x771F;&#x7684;&#x4E0D;&#x662F;&#x6211;&#x7684;&#x904A;&#x6232;</p>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="2_todo_list/01_experience/7">
+<h1>&#x5E38;&#x5E38;&#x5FD8;&#x8A18;&#x7684;&#x4E8B;&#x60C5;</h1>
+
+<ul>
+<li>&#x4FBF;&#x5229;&#x8CBC;&#x7DB2;&#x7AD9;</li>
+<li>&#x5B9A;&#x6642;&#x63D0;&#x9192;</li>
+</ul>
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="2_todo_list/01_experience/8">
+<h1>&#x6BCF;&#x5929;&#x90FD;&#x6703;&#x4E0A;&#x53BB;&#x700F;&#x89BD;&#x7684;&#x7DB2;&#x7AD9;</h1>
+
+<ul>
+<li>&#x6311;&#x4E00;&#x4E9B;&#x529F;&#x80FD;&#x81EA;&#x5DF1;&#x91CD;&#x523B;</li>
+<li>&#x5927;&#x529F;&#x80FD;&#x8981;&#x62C6;&#x6210;&#x5C0F;&#x529F;&#x80FD;&#x4F86;&#x5BE6;&#x4F5C;</li>
+</ul>
+
+</div>
+</div><div class="slide" data-transition="fade"><div class="content center" ref="2_todo_list/02_todo_list_site/1">
+<h1>&#x5FAA;&#x5E8F;&#x6F38;&#x9032;&#x7684;&#x5BEB;&#x7DB2;&#x7AD9;</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="2_todo_list/02_todo_list_site/2">
+<h1>&#x60F3;&#x8981;&#x5275;&#x696D;&#xFF1F;&#x53EF;&#x4EE5;&#x5F9E;&#x5B78;&#x5BEB;&#x7A0B;&#x5F0F;&#x958B;&#x59CB;&#xFF0C;&#x4EE5;&#x53CA;10&#x500B;&#x7D66;&#x7DB2;&#x7AD9;&#x958B;&#x767C;&#x521D;&#x5B78;&#x8005;&#x7DF4;&#x529F;&#x7684;&#x9EDE;&#x5B50;</h1>
+
+<ul>
+<li><a href="http://www.inside.com.tw/2011/07/14/quit-and-learn-programming-and-10-ideas-for-beginner-web-developer">http://www.inside.com.tw/2011/07/14/quit-and-learn-programming-and-10-ideas-for-beginner-web-developer</a></li>
+<li>@deduce from inside</li>
+</ul>
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="2_todo_list/02_todo_list_site/3">
+<h1>10 Ideas for Beginner Web Developers</h1>
+
+<ul>
+<li><a href="http://excid3.com/blog/10-ideas-for-beginner-web-developers/">http://excid3.com/blog/10-ideas-for-beginner-web-developers/</a></li>
+</ul>
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="2_todo_list/02_todo_list_site/4">
+<h1>&#x5F85;&#x8FA6;&#x4E8B;&#x9805;&#x6E05;&#x55AE; Todo List</h1>
+
+<ul>
+<li>&#x529F;&#x80FD;&#x5BE6;&#x7528;&#xFF0C;&#x7C21;&#x6613;&#x7248; redmine</li>
+<li>&#x8A18;&#x9304;&#x7463;&#x4E8B;</li>
+<li>&#x5927;&#x4E8B;&#x5316;&#x5C1B;</li>
+<li>&#x5927;&#x529F;&#x80FD;&#x5316;&#x5C0F;&#x529F;&#x80FD;</li>
+</ul>
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="2_todo_list/02_todo_list_site/5">
+<h1>&#x7DB2;&#x7AD9;&#x529F;&#x80FD;</h1>
+
+<ul>
+<li>&#x7C21;&#x55AE;&#x7684; Todo list&#xFF0C; simple_form gem</li>
+<li>&#x52A0;&#x4E0A;&#x4F7F;&#x7528;&#x8005;&#x8A3B;&#x518A;&#x3001;&#x767B;&#x5165;&#x9A57;&#x8B49;&#xFF0C; devise gem =&gt; 14:30 &#x5584;&#x7528; Devise &#x5EFA;&#x7F6E;&#x6703;&#x54E1;&#x7CFB;&#x7D71;</li>
+<li>&#x53EF;&#x4EE5;&#x4E0A;&#x50B3;&#x6A94;&#x6848;&#xFF0C; paperclip gem</li>
+<li>&#x52A0;&#x5165;&#x5206;&#x9801;&#xFF0C; kaminari gem</li>
+<li>&#x52A0;&#x5165; <a href="http://jqueryui.com/demos/">jQuery UI</a> &#x7279;&#x6548;&#xFF1A;</li>
+<li>Draggle+Sortable&#x3001;Autocomplete&#x3001;Datepicker</li>
+</ul>
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="2_todo_list/02_todo_list_site/6">
+<h1>CRUD &#x548C; RESTful &#x5C31;&#x662F;&#x8E72;&#x99AC;&#x6B65;</h1>
+
+<ul>
+<li>&#x8E72;&#x99AC;&#x6B65;&#x5F88;&#x7121;&#x804A;</li>
+<li>&#x5E7E;&#x4E4E;&#x4EFB;&#x4F55;&#x529F;&#x80FD;&#x90FD;&#x662F;&#x5F9E; CRUD &#x548C; RESTful &#x958B;&#x59CB;</li>
+<li>&#x7DB2;&#x7AD9;&#x5F88;&#x919C;&#x6C92;&#x95DC;&#x4FC2;&#xFF0C;&#x5148;&#x6C42;&#x6703;&#x52D5;&#x518D;&#x6C42;&#x597D;&#x770B;</li>
+</ul>
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="2_todo_list/02_todo_list_site/7">
+<h1>&#x7DB2;&#x7AD9;&#x529F;&#x80FD;</h1>
+
+<ul>
+<li>&#x641C;&#x5C0B;&#x5F85;&#x8FA6;&#x4E8B;&#x9805;&#xFF0C; meta_search gem</li>
+<li>&#x5F85;&#x8FA6;&#x4E8B;&#x9805;&#x5FEB;&#x5230;&#x671F;&#x6642;&#x5BC4;&#x4FE1;&#xFF0C; Rails ActionMailer</li>
+<li>&#x8ABF;&#x6574;&#x5916;&#x89C0;&#xFF0C;rails_admin gem, css3buttons_rails_helpers gem</li>
+<li>&#x81EA;&#x52D5;&#x5316;&#x6392;&#x7A0B;&#xFF0C; whenever gem</li>
+<li>&#x628A;&#x7DB2;&#x7AD9;&#x767C;&#x4F48;&#x5230; heroku/aws</li>
+<li>&#x628A;&#x7DB2;&#x7AD9;&#x7D66;&#x670B;&#x53CB;&#x8A66;&#x7528;&#xFF0C;&#x4E26;&#x63A5;&#x6536;&#x610F;&#x898B;&#x53BB;&#x8ABF;&#x6574;&#x7DB2;&#x7AD9;&#x529F;&#x80FD;</li>
+</ul>
+
+</div>
+</div><div class="slide" data-transition="fade"><div class="content center" ref="3_resources/01_resource/1">
+<h1>&#x9032;&#x968E;&#x8CC7;&#x6E90;</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="3_resources/01_resource/2">
+<h1>&#x6316;&#x6398;&#x597D;&#x7528;&#x7684; Gems &#x548C; methods</h1>
+
+<ul>
+<li>DRY &#xFF0C;&#x5E38;&#x7528;&#x7684;&#x529F;&#x80FD;&#x90FD;&#x6709; gem &#x53EF;&#x4EE5;&#x7528;</li>
+<li>&#x5E38;&#x770B;&#x5E38;&#x807D; casts</li>
+</ul>
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="3_resources/01_resource/3">
+<h1>&#x5F37;&#x70C8;&#x5EFA;&#x8B70;&#x8981;&#x770B;&#x7684;&#x82F1;&#x6587;&#x8CC7;&#x6E90;</h1>
+
+<ul>
+<li>http://weblog.rubyonrails.org/</li>
+<li>http://guides.rubyonrails.org/ (or edge version)</li>
+<li>http://ruby5.envylabs.com/</li>
+<li>http://railscasts.com/ (or http://asciicasts.com/)</li>
+<li>http://rubyshow.com/</li>
+<li>http://ruby.learncodethehardway.org/</li>
+</ul>
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="3_resources/01_resource/4">
+<h1>&#x5F37;&#x70C8;&#x5EFA;&#x8B70;&#x8981;&#x770B;&#x7684;&#x4E2D;&#x6587;&#x8CC7;&#x6E90;</h1>
+
+<ul>
+<li>http://blog.xdite.net/</li>
+<li>http://ihower.tw/blog/</li>
+<li>Ruby on Rails &#x5BE6;&#x6230;&#x8056;&#x7D93;</li>
+<li>Rails 101</li>
+</ul>
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="3_resources/01_resource/5">
+<h1>&#x4F60;&#x6703;&#x767C;&#x73FE;</h1>
+
+<ul>
+<li><h4>Wow! &#x5C45;&#x7136;&#x9023;&#x9019;&#x7A2E;&#x529F;&#x80FD;&#x90FD;&#x6709; gem</h4></li>
+<li><h4>Orz &#x5C45;&#x7136;&#x6709;&#x9019;&#x500B; method</h4></li>
+<li>&#x8A66;&#x8457;&#x53BB;&#x5957;&#x7528;/&#x91CD;&#x69CB;&#x81EA;&#x5DF1;&#x7684;&#x7DB2;&#x7AD9;</li>
+</ul>
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="3_resources/01_resource/6">
+<h1>Rails Casts</h1>
+
+<ul>
+<li>274-remember-me-reset-password</li>
+<li>263-client-side-validations</li>
+<li>&#x5957;&#x7528; gems &#x5230;&#x525B;&#x624D;&#x7684;&#x5F85;&#x8FA6;&#x4E8B;&#x9805;&#x6E05;&#x55AE;&#x7DB2;&#x7AD9;&#x4E0A;</li>
+</ul>
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="3_resources/01_resource/7">
+<h1>Ruby Quicktips</h1>
+
+<ul>
+<li>Eager loading</li>
+<li>Random choice - eh, I mean sample - of an array&#x2019;s elements</li>
+<li>&#x5229;&#x7528;&#x65B0;&#x5B78;&#x5230;&#x7684; method &#x6574;&#x7406;&#x7A0B;&#x5F0F;</li>
+</ul>
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="3_resources/01_resource/8">
+<h1>&#x7E7C;&#x7E8C;&#x6DF1;&#x5165;&#x7684; Rails &#x8CC7;&#x6E90;</h1>
+
+<ul>
+<li>http://railstips.org/</li>
+<li>http://railscoach.com/</li>
+<li>http://en.oreilly.com/rails2011</li>
+<li>http://apidock.com/rails</li>
+<li>http://peepcode.com/screencasts/ruby-on-rails</li>
+</ul>
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="3_resources/01_resource/9">
+<h1>&#x7E7C;&#x7E8C;&#x6DF1;&#x5165;&#x7684; Ruby &#x8CC7;&#x6E90;</h1>
+
+<ul>
+<li>http://ruby-toolbox.com/</li>
+<li>http://rubyquicktips.com/</li>
+<li>http://sdruby.org/podcast</li>
+<li>http://rubyrogues.com/</li>
+<li>http://teachmetocode.com/</li>
+<li>http://www.rubyflow.com/</li>
+</ul>
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="3_resources/01_resource/10">
+<h1>&#x63A8;&#x85A6;&#x53BB;&#x6311;&#x6230;&#x7684;&#x904A;&#x6232;</h1>
+
+<ul>
+<li>https://github.com/ryanb/ruby-warrior</li>
+<li>http://railsforzombies.org/</li>
+</ul>
+
+</div>
+</div><div class="slide" data-transition="fade"><div class="content center" ref="4_conclusion_and_qa/01_conclusion/1">
+<h1>&#x7D50;&#x8AD6;</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="4_conclusion_and_qa/01_conclusion/2">
+<ul>
+<li>&#x5BEB;&#x7A0B;&#x5F0F;&#x8981;&#x5FEB;&#x6A02;&#xFF0C;&#x5DE5;&#x4F5C;&#x8981;&#x5FEB;&#x6A02;</li>
+<li>&#x6301;&#x7E8C;&#x5BEB;&#x7A0B;&#x5F0F;&#xFF0C;&#x6301;&#x7E8C; follow Rails &#x793E;&#x7FA4;</li>
+<li>&#x5E38;&#x770B; casts &#x4E26;&#x6539;&#x5584;&#x81EA;&#x5DF1;&#x7684;&#x7A0B;&#x5F0F;</li>
+<li>&#x6BCF;&#x9031;&#x4E8C;&#x6B61;&#x8FCE;&#x4F86; Rails Tuesday &#x4EA4;&#x6D41;&#x8A0E;&#x8AD6;&#xFF01;</li>
+</ul>
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="4_conclusion_and_qa/01_conclusion/3">
+<h1>&#x5E79;&#x58DE;&#x4E8B;&#x662F;&#x9032;&#x6B65;&#x6700;&#x5927;&#x7684;&#x539F;&#x52D5;&#x529B;</h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="4_conclusion_and_qa/01_conclusion/4">
+<h1>Q &amp; A</h1>
+
+<ul>
+<li><em>http://wildjcrt.github.com/happy_programming/</em></li>
+</ul>
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="4_conclusion_and_qa/01_conclusion/5">
+<h1>&#x6295;&#x5F71;&#x7247;&#x6280;&#x8853;</h1>
+
+<ul>
+<li><a href="https://github.com/schacon/showoff">showoff</a> @ <a href="http://twitter.com/#!/chacon">schacon</a></li>
+<li>https://github.com/wildjcrt/happy_programming</li>
+<li>Markdown</li>
+<li>Sinatra</li>
+<li>Sass</li>
+</ul>
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="4_conclusion_and_qa/01_conclusion/6">
+<h1>&#x5E79;&#x58DE;&#x4E8B;</h1>
+
+<ul>
+<li>&#x7528; Kindle &#x770B;&#x5C0F;&#x8AAA;</li>
+<li>Kindle &#x652F;&#x63F4;&#x6700;&#x65B9;&#x4FBF;&#x7684;&#x683C;&#x5F0F; txt</li>
+<li>&#x5BEB;&#x4E00;&#x652F; Ruby &#x57F7;&#x884C;&#x6A94;&#x53BB;&#x6293;&#x5C0F;&#x8AAA;&#x7684;&#x7DB2;&#x9801;</li>
+<li>&#x904E;&#x6FFE;&#x6389;&#x6240;&#x6709;&#x7684; html tag</li>
+<li>&#x8F49;&#x5B58;&#x6A94;&#x70BA; txt</li>
+</ul>
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="4_conclusion_and_qa/01_conclusion/7">
+<h1>&#x81EA;&#x6211;&#x7DF4;&#x7FD2;1</h1>
+
+<ul>
+<li>&#x5C07;&#x8CA0;&#x8CAC;&#x7684;&#x5316;&#x599D;&#x53F0;&#x5C08;&#x6848;&#x5167;&#xFF0C; lib &#x6253;&#x5305;&#x6210; gem</li>
+<li>pixnet_api&#xFF0C;&#x76EE;&#x524D;&#x53EA;&#x6709;&#x5BEB;&#x75DE;&#x5BA2;&#x90A6;&#x76F8;&#x7C3F; api</li>
+</ul>
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="4_conclusion_and_qa/01_conclusion/8">
+<h1>&#x81EA;&#x6211;&#x7DF4;&#x7FD2;2</h1>
+
+<ul>
+<li><del>Slzzp Sort</del></li>
+<li><a href="http://dis.4chan.org/read/prog/1295544154">Sleep Sort</a></li>
+<li>&#x6839;&#x64DA;&#x7406;&#x8AD6;&#x5BEB;&#x51FA; Ruby &#x7248;&#x7684; sleep sort</li>
+<li>Multi Thread</li>
+<li>bash command: shift</li>
+</ul>
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="4_conclusion_and_qa/01_conclusion/9">
+<h1>&#x65B0;&#x624B;&#x6280;&#x8853;&#x8B80;&#x7269;</h1>
+
+<ul>
+<li>Programatic Programmer &#x7A0B;&#x5E8F;&#x54E1;&#x4FEE;&#x7149;&#x4E4B;&#x9053;&#xFF0D;&#x5F9E;&#x5C0F;&#x5DE5;&#x5230;&#x5C08;&#x5BB6;&#xFF08;&#x7C21;&#xFF09;</li>
+<li>Apprenticeship Patterns &#x5B78;&#x5F92;&#x6A21;&#x5F0F;&#xFF1A;&#x512A;&#x79C0;&#x8EDF;&#x9AD4;&#x958B;&#x767C;&#x8005;&#x7684;&#x990A;&#x6210;&#x4E4B;&#x8DEF;</li>
+<li>Passionate Programmer &#x6211;&#x7DE8;&#x7A0B;&#xFF0C;&#x6211;&#x5FEB;&#x6A02;&#xFF08;&#x7C21;&#xFF09;</li>
+</ul>
+
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="4_conclusion_and_qa/01_conclusion/10">
+<h1>&#x65B0;&#x624B;&#x975E;&#x6280;&#x8853;&#x8B80;&#x7269;</h1>
+
+<ul>
+<li>Rework &#x5DE5;&#x4F5C;&#x5927;&#x89E3;&#x653E;</li>
+<li>Getting Real</li>
+<li>&#x81EA;&#x6162;1</li>
+</ul>
+
+</div>
+</div></div>
+
+</body>
+</html>
