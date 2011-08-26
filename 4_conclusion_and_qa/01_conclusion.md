@@ -19,6 +19,7 @@
 # 投影片技術 #
 
 * [showoff](https://github.com/schacon/showoff) @ [schacon](http://twitter.com/#!/chacon)
+* https://github.com/wildjcrt/happy_programming
 * Markdown
 * Sinatra
 * Sass
