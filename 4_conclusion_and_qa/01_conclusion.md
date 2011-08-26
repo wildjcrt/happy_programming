@@ -45,14 +45,14 @@
 * [Sleep Sort](http://dis.4chan.org/read/prog/1295544154)
 * 根據理論寫出 Ruby 版的 sleep sort
 * Multi Thread
-* bash command
+* bash command: shift
 
 <!SLIDE bullets incremental>
 # 新手技術讀物 #
 
-* Programatic Programmer 從小工到專家
-* 軟件開發者路線圖 Craftman
-* Passionate Programmer 我編程，我快樂
+* Programatic Programmer 程序員修煉之道－從小工到專家（簡）
+* Apprenticeship Patterns 學徒模式：優秀軟體開發者的養成之路
+* Passionate Programmer 我編程，我快樂（簡）
 
 <!SLIDE bullets incremental>
 # 新手非技術讀物 #
